@@ -2,9 +2,10 @@ package handler
 
 import (
 	"bytes"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage/repository"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage/service"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/productpage/repository"
+	"github.com/kalmad99/Deployment/allEntitiesAction/productpage/service"
+	"github.com/kalmad99/Deployment/entity"
+
 	"html/template"
 	"io/ioutil"
 	"net/http"

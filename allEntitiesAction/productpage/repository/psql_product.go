@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 	"errors"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/entity"
 	"log"
 	"math"
 	//"math"

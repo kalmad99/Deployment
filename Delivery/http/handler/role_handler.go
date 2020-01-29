@@ -2,7 +2,7 @@ package handler
 
 import (
 	"encoding/json"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user"
+	"github.com/kalmad99/Deployment/allEntitiesAction/user"
 	"net/http"
 )
 

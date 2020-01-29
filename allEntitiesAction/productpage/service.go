@@ -1,6 +1,6 @@
 package productpage
 
-import "github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+import "github.com/kalmad99/Deployment/entity"
 
 type CategoryService interface {
 	Categories() ([]entity.Category, []error)

@@ -1,6 +1,6 @@
 package user
 
-import "github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+import "github.com/kalmad99/Deployment/entity"
 
 // UserRepository specifies application user related database operations
 type UserRepository interface {

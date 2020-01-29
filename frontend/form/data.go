@@ -27,7 +27,7 @@ func (inVal *Input) MinLength(field string, d int) {
 		return
 	}
 	if utf8.RuneCountInString(value) < d {
-		Add(field, fmt.Sprintf("This field is too short (minimum is %d characters)", d))
+		inVal.VErrors.Add(field, fmt.Sprintf("This field is too short (minimum is %d characters)", d))
 	}
 }
 
@@ -36,7 +36,7 @@ func (inVal *Input) Required(fields ...string) {
 	for _, f := range fields {
 		value := inVal.Values.Get(f)
 		if len(value) == 0 {
-			Add(f, "This field is required field")
+			inVal.VErrors.Add(f, "This field is required field")
 		}
 	}
 }
@@ -48,7 +48,7 @@ func (inVal *Input) MatchesPattern(field string, pattern *regexp.Regexp) {
 		return
 	}
 	if !pattern.MatchString(value) {
-		Add(field, "The value entered is invalid")
+		inVal.VErrors.Add(field, "The value entered is invalid")
 	}
 }
 
@@ -59,7 +59,7 @@ func (inVal *Input) MatchesPhonePattern(field string, pattern *regexp.Regexp) {
 		return
 	}
 	if !pattern.MatchString(value) {
-		Add(field, "The value entered is invalid. It should be of the format +251911111111")
+		inVal.VErrors.Add(field, "The value entered is invalid. It should be of the format +251911111111")
 	}
 }
 
@@ -70,7 +70,7 @@ func (inVal *Input) BankExists(field string, pattern *regexp.Regexp) {
 		return
 	}
 	if !pattern.MatchString(value) {
-		Add(field, "The value entered is invalid. It should be of the format +251911111111")
+		inVal.VErrors.Add(field, "The value entered is invalid. It should be of the format +251911111111")
 	}
 }
 // PasswordMatches checks if Password and Confirm Password fields match
@@ -83,8 +83,8 @@ func (inVal *Input) PasswordMatches(password string, confPassword string) {
 	}
 
 	if pwd != confPwd {
-		Add(password, "The Password and Confim Password values did not match")
-		Add(confPassword, "The Password and Confim Password values did not match")
+		inVal.VErrors.Add(password, "The Password and Confim Password values did not match")
+		inVal.VErrors.Add(confPassword, "The Password and Confim Password values did not match")
 	}
 }
 

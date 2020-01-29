@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/productpage"
+	"github.com/kalmad99/Deployment/entity"
 )
 
 // CategoryGormRepo implements the menu.CategoryRepository interface

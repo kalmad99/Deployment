@@ -10,12 +10,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/authFiles/csrfToken"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/authFiles/permission"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/authFiles/session"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/frontend/form"
+	"github.com/kalmad99/Deployment/allEntitiesAction/user"
+	"github.com/kalmad99/Deployment/authFiles/csrfToken"
+	"github.com/kalmad99/Deployment/authFiles/permission"
+	"github.com/kalmad99/Deployment/authFiles/session"
+	"github.com/kalmad99/Deployment/entity"
+	"github.com/kalmad99/Deployment/frontend/form"
 	"golang.org/x/crypto/bcrypt"
 )
 

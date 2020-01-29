@@ -1,6 +1,6 @@
 package user
 
-import "github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+import "github.com/kalmad99/Deployment/entity"
 
 // UserService specifies application user related services
 type UserService interface {

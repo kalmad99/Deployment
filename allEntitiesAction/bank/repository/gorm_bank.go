@@ -3,8 +3,8 @@ package repository
 import (
 	"errors"
 	"github.com/jinzhu/gorm"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/bank"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/bank"
+	"github.com/kalmad99/Deployment/entity"
 	"log"
 )
 

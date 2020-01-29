@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/productpage"
+	"github.com/kalmad99/Deployment/entity"
 )
 
 // ItemService implements menu.ItemService interface

@@ -1,6 +1,6 @@
 package bank
 
-import "github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+import "github.com/kalmad99/Deployment/entity"
 
 // PayRepository specifies payment related database operations
 type PayRepository interface {

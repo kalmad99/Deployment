@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/user"
+	"github.com/kalmad99/Deployment/entity"
 )
 
 // RoleService implements menu.RoleService interface

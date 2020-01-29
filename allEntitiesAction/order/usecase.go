@@ -1,6 +1,6 @@
 package order
 
-import 	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+import 	"github.com/kalmad99/Deployment/entity"
 
 
 //OrderService specifies customer menu order related services

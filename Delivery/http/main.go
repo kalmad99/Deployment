@@ -5,27 +5,27 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/Delivery/http/handler"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/authFiles/csrfToken"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/Delivery/http/handler"
+	"github.com/kalmad99/Deployment/authFiles/csrfToken"
+	"github.com/kalmad99/Deployment/entity"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 
-	prepim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage/repository"
-	psrvim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage/service"
+	prepim "github.com/kalmad99/Deployment/allEntitiesAction/productpage/repository"
+	psrvim "github.com/kalmad99/Deployment/allEntitiesAction/productpage/service"
 
-	urepimp "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user/repository"
-	usrvimp "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user/service"
+	urepimp "github.com/kalmad99/Deployment/allEntitiesAction/user/repository"
+	usrvimp "github.com/kalmad99/Deployment/allEntitiesAction/user/service"
 
-	crepim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/cart/repository"
-	csrvim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/cart/service"
+	crepim "github.com/kalmad99/Deployment/allEntitiesAction/cart/repository"
+	csrvim "github.com/kalmad99/Deployment/allEntitiesAction/cart/service"
 
-	orepim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/order/repository"
-	osrvim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/order/usecase"
+	orepim "github.com/kalmad99/Deployment/allEntitiesAction/order/repository"
+	osrvim "github.com/kalmad99/Deployment/allEntitiesAction/order/usecase"
 
-	brepim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/bank/repository"
-	bsrvim "github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/bank/usecase"
+	brepim "github.com/kalmad99/Deployment/allEntitiesAction/bank/repository"
+	bsrvim "github.com/kalmad99/Deployment/allEntitiesAction/bank/usecase"
 )
 
 func createTables(dbconn *gorm.DB) []error {

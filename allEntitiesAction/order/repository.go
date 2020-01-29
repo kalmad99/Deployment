@@ -1,7 +1,7 @@
 package order
 
 import (
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/entity"
 )
 
 // OrderRepository specifies customer menu order related database operations

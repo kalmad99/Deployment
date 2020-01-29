@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/productpage"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/authFiles/csrfToken"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/frontend/form"
+	"github.com/kalmad99/Deployment/allEntitiesAction/productpage"
+	"github.com/kalmad99/Deployment/authFiles/csrfToken"
+	"github.com/kalmad99/Deployment/entity"
+	"github.com/kalmad99/Deployment/frontend/form"
 	"html/template"
 	"net/http"
 	"net/url"

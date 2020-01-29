@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/cart"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/cart"
+	"github.com/kalmad99/Deployment/entity"
 	//"context"
 	//"errors"
 	//"time"

@@ -2,8 +2,8 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/allEntitiesAction/user"
-	"github.com/kalmad99/Online-Electronics-Shopping-Project/entity"
+	"github.com/kalmad99/Deployment/allEntitiesAction/user"
+	"github.com/kalmad99/Deployment/entity"
 	"golang.org/x/crypto/bcrypt"
 	"log"
 )

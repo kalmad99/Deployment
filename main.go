@@ -26,6 +26,7 @@ import (
 
 	brepim "github.com/kalmad99/Deployment/allEntitiesAction/bank/repository"
 	bsrvim "github.com/kalmad99/Deployment/allEntitiesAction/bank/usecase"
+	"os"
 )
 
 func createTables(dbconn *gorm.DB) []error {
@@ -202,7 +203,10 @@ func main() {
 
 	http.Handle("/logout", uh.Authenticated(http.HandlerFunc(uh.Logout)))
 
-	http.ListenAndServe(":8080", nil)
+	server := http.Server{
+		Addr: ":" + os.Getenv("PORT"),
+	}
+	server.ListenAndServe()
 }
 
 func ConfigSessions() *entity.Session {
